@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/search_style.css">
+    <title>Product Search</title>
+</head>
+<body>
+<div class="header">
+    <div id="title">
+        <h1>The Arch Bar</h1>
+    </div>
+
+    <!--Navigation Bar -->
+    <nav>
+        <ul>
+            
+            <a href="index.html"><li>Home</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="products.html"><li>Order Online</li></a>
+            <a href="search.html"><li>Search</li></a>
+            <a href="signup.html"><li>Sign up</li></a>
+            <a href="login.html"><li>Log in</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="game.html"><li>Game</li></a>
+
+        </ul>
+    </nav>
+</div>
+<form action="php/search.php" method="post" class="container">
+    <label for="keyword">Search product:</label><br>
+    <input type="text" id="keyword" name="keyword" required><br>
+    <div class="buttons">
+        <input type="submit" value="Search">
+        <input type="reset" value="Reset">
+    </div>
+</form>
+<footer>
+    <div id="copyright">
+        © 2023 The Arch Restaurant
+    </div>
+</footer>
+</body>
+</html>

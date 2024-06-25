@@ -1,0 +1,172 @@
+/* mobile first */
+@font-face{
+    font-family: Vogue;
+    src:  url("../fonts/Vogue.ttf");
+}
+
+
+@font-face{
+    font-family: Cinzel;
+    src:  url("../fonts/Cinzel-Regular.otf");
+}
+
+.center-table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title{
+    font-family: Vogue, serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+nav{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    border:  solid 1px black;
+    margin-bottom: 20px;
+
+}
+
+nav ul{
+    border : solid 0px black;
+    display : flex;
+    list-style:  none;
+    padding : 0;
+    margin: 0;
+    color: green;
+    flex-direction: column;
+}
+
+nav ul a{
+    flex-grow :1;
+
+}
+
+nav ul a li{
+    padding : 20px;
+    color: white;
+    text-align:  center;
+    border:  solid 0px black;
+}
+
+nav ul a li:hover{
+    background-color : rgba(34,72,91,0.5);
+}
+
+nav ul a:link{
+    color : #94582F;
+    font-family: sans-serif;
+    text-decoration:  none;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background: url('../images/vintage-dark.jpg') center/cover fixed no-repeat;
+    opacity: 0.8; 
+    color: #333;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container > section:nth-child(2) {
+    align-items: center;
+}
+
+#lottery {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer{
+    display: block;
+    margin-top: 30px;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+#copyright{
+    font-family: Cinzel, serif;
+    width: 100%;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    background-color: grey;
+}
+
+.container > section:nth-child(2) { 
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#return{
+   text-decoration: none;
+   font-size: 18px;
+   color: lightblue;
+
+}
+
+
+/* desktop */
+@media (min-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container > section, .container > section:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .container section {
+        padding: 20px;
+    }
+
+    img {
+        width: auto;
+        height: 300px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact_styles.css">
+</head>
+<body>
+
+ <div class="header">
+        <div id="title">
+            <h1>The Arch Bar</h1>
+        </div>
+
+        <!--Navigation Bar -->
+        <nav>
+            <ul>  
+                  <a href="index.html"><li>Home</li></a>
+                  <a href="contact.html"><li>Contact</li></a>
+                  <a href="products.html"><li>Order Online</li></a>
+                  <a href="search.html"><li>Search</li></a>
+                  <a href="signup.html"><li>Sign up</li></a>
+                  <a href="login.html"><li>Log in</li></a>
+                  <a href="gallery.html"><li>Gallery</li></a>
+                  <a href="game.html"><li>Game</li></a>
+                  
+            </ul>
+        </nav>
+   </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <h2>We need Your Feedback</h2>
+
+        <form action="php/contact.php" method="post">
+            <!-- Replace "contact.php" with the actual script that handle form submissions -->
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="foodRating">Rate Our Food:</label>
+            <select id="foodRating" name="foodRating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="serviceRating">Rate Our Service:</label>
+            <select id="serviceRating" name="serviceRating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <div class="contact-info">
+            <h2>Our Information</h2>
+            <p>Telephone: +1 (555) 123-4567</p>
+            <p>Address: 225 Sullivan St, New York, NY 10012</p>
+            <p>Operating Hours: Monday to Saturday, 9:00 AM - 10:00 PM</p>
+        </div>
+        <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.8689023845178!2d-73.99996145036174!3d40.729559043672246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259d4955cac01%3A0x58f4b4fcad58588f!2sAll&#39;Antico%20Vinaio!5e0!3m2!1sen!2sus!4v1701716337224!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+       </div>
+
+
+</body>
+
+    <footer>
+     
+        <div id="copyright">
+            © 2023 The Arch Restaurant
+        </div>
+
+    </footer>
+
+
+</html>

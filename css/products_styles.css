@@ -1,0 +1,175 @@
+/* mobile first */
+@font-face{
+    font-family: Vogue;
+    src:  url("../fonts/Vogue.ttf");
+}
+
+
+@font-face{
+    font-family: Cinzel;
+    src:  url("../fonts/Cinzel-Regular.otf");
+}
+
+#title{
+    font-family: Vogue, serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+nav{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    border:  solid 1px black;
+    margin-bottom: 20px;
+
+}
+
+nav ul{
+    border : solid 0 black;
+    display : flex;
+    list-style:  none;
+    padding : 0;
+    margin: 0;
+    color: green;
+    flex-direction: column;
+}
+
+nav ul a{
+    flex-grow :1;
+
+}
+
+nav ul a li{
+    padding : 20px;
+    color: white;
+    text-align:  center;
+    border:  solid 0 black;
+}
+
+nav ul a li:hover{
+    background-color : rgba(34,72,91,0.5);
+}
+
+nav ul a:link{
+    color : #94582F;
+    font-family: sans-serif;
+    text-decoration:  none;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background: url('../images/vintage-dark.jpg') center/cover fixed no-repeat;
+    opacity: 0.8; 
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer{
+    margin-top: 40px;
+    position: relative; 
+    margin-left: 0;
+    width: 90%;
+    margin-bottom: 0;
+}
+
+input[type="submit"],
+input[type="button"] {
+    font-size: 18px;
+    width: 42%;
+    background-color: #4CAF50;
+    color:white;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    font-size: 18px;
+    width: 42%;
+    background-color: #d25b4b;
+    color:white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#copyright{
+    font-family: Cinzel, serif;
+    width: 100%;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    background-color: grey;
+}
+
+#receipt {
+    /* background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    color: white;
+}
+
+#shippingOptions label {
+    text-align: center;
+    display: block;
+}
+
+/* desktop */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1300px) { 
+    .container {
+        max-width: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    form > div {
+        max-width: 800px;
+        margin: auto;
+        background-color: rgba(255, 255, 255);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;    
+    }
+}

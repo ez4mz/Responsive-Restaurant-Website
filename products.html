@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/products_styles.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div id="title">
+            <h1>The Arch Bar</h1>
+        </div>
+
+        <!--navigation bar -->
+        <nav>
+            <ul>  
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="products.html"><li>Order Online</li></a>
+                    <a href="search.html"><li>Search</li></a>
+                    <a href="signup.html"><li>Sign up</li></a>
+                    <a href="login.html"><li>Log in</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+                    <a href="game.html"><li>Game</li></a>
+                    
+            </ul>
+        </nav>
+    </div>
+
+    <!-- menu items -->
+    <div class="container">
+        <form id="shoppingForm" action="php/products.php" method="POST">
+            <div>
+                <h1>Menu</h1>
+                <div class="product">
+                    <h3>Peking Duck</h3>
+                    <img src="images/pekingDuck.jpg" alt="peking duck" height="200">
+                    <p><i>A classic Chinese delicacy featuring succulent duck, served with thinly sliced carrots, cucumbers, and soft pancakes for a perfect wrap.</i></p>
+                    <p>Price: $30</p>
+                    <label>Quantity: <input type="number" name="quantity1" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal1" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Kung Pao Chicken</h3>
+                    <img src="images/kungPao.jpg" alt="kung pao chicken" height="200">
+                    <p><i>A spicy, stir-fried Chinese dish made with tender chicken, peanuts, vegetables, and chili peppers, paired with fluffy white rice.</i></p>
+                    <p>Price: $20</p>
+                    <label>Quantity: <input type="number" name="quantity2" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal2" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Hainanese Chicken Rice</h3>
+                    <img src="images/hainaneseChicken.jpg" alt="hainanese chicken rice" height="200">
+                    <p><i>Tender Hainanese Chicken, served with aromatic white rice and crisp cucumbers, complemented by a bold spicy garlic sauce</i></p>
+                    <p>Price: $15</p>
+                    <label>Quantity: <input type="number" name="quantity3" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal3" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Shredded Pork with Garlic Sauce</h3>
+                    <img src="images/shreddedPork.jpg" alt="shredded pork with garlic sauce" height="200">
+                    <p><i>Savory and garlicky shredded pork, a delightful combination of flavors and textures that tantalize the taste buds.</i></p>
+                    <p>Price: $18</p>
+                    <label>Quantity: <input type="number" name="quantity4" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal4" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Century Egg and Pork Congee</h3>
+                    <img src="images/congee.webp" alt="century egg and pork congee" height="200">
+                    <p><i>A comforting Chinese rice porridge mixed with unique century eggs and tender pork, offering a rich and hearty meal.</i></p>
+                    <p>Price: $15</p>
+                    <label>Quantity: <input type="number" name="quantity5" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal5" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Truffle Mac n' Cheese</h3>
+                    <img src="images/truffleMac.jpg" alt="truffle mac and cheese" height="200">
+                    <p><i>A luxurious twist on the classic, featuring creamy cheese sauce infused with truffle oil, making it a rich and decadent treat.</i></p>
+                    <p>Price: $17</p>
+                    <label>Quantity: <input type="number" name="quantity6" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal6" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Steak</h3>
+                    <img src="images/steak.jpg" alt="steak" height="200">
+                    <p><i>A perfectly grilled steak paired with golden, crispy fries - a timeless combination for meat lovers.</i></p>
+                    <p>Price: $33</p>
+                    <label>Quantity: <input type="number" name="quantity7" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal7" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Arch Burger</h3>
+                    <img src="images/burger.jpg" alt="burger" height="200">
+                    <p><i>A juicy burger topped with melted cheese and caramelized onions, served with crispy fries and a tangy pickle on the side.</i></p>
+                    <p>Price: $20</p>
+                    <label>Quantity: <input type="number" name="quantity8" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal8" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Roasted Salmon</h3>
+                    <img src="images/salmon.jpeg" alt="salmon" height="200">
+                    <p><i>Exquisitely roasted salmon, accompanied by a medley of roasted vegetables and a smooth aioli, creating a harmony of flavors.</i></p>
+                    <p>Price: $22</p>
+                    <label>Quantity: <input type="number" name="quantity9" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal9" readonly></label>
+                </div>
+                <div class="product">
+                    <h3>Surf n' Turf Fettuccine</h3>
+                    <img src="images/cajunFettuccine.jpg" alt="cajun fettuccine" height="200">
+                    <p><i>A spicy and savory blend of shrimp and sausage with fettuccine, tossed in a Cajun-inspired sauce for a bold flavor fusion.</i></p>
+                    <p>Price: $18</p>
+                    <label>Quantity: <input type="number" name="quantity10" min="0" value="0"></label>
+                    <label>Subtotal: <input type="text" name="subtotal10" readonly></label>
+                </div>
+            </div>
+
+            <div>
+                <!-- delivery -->
+                <div>
+                    <h2>Pickup / Delivery</h2>
+                    <div id="shippingOptions">
+                        <label><input type="radio" name="shipping" value="Pickup"> Pickup</label>
+                        <label><input type="radio" name="shipping" value="Delivery"> Delivery</label>
+                        <label>Delivery Amount: <input type="text" name="shippingAmount" readonly></label>
+                    </div>
+                </div>
+
+                <!-- grand total -->
+                <div>
+                    <h2>Grand Total</h2>
+                    <input type="text" name="grandTotal">
+                </div>
+
+                <!-- customer info -->
+                <div id="customerInfo">
+                    <h2>Customer Information</h2>
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="input-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example123@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div class="input-group">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" name="zip" id="zip" placeholder="00000" maxlength="5">
+                    </div>
+                    <div class="input-group">
+                        <label for="ccname">Name on Credit Card</label>
+                        <input type="text" name="ccname" id="ccname">
+                    </div>
+                    <div class="input-group">
+                        <label for="cctype">Credit Card Type</label>
+                        <select name="cctype" id="cctype">
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="discover">Discover</option>
+                            <option value="americanexpress">American Express</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="ccnumber">Credit Card Number</label>
+                        <input type="text" name="ccnumber" id="ccnumber" placeholder="1234 5678 9012 3456" maxlength="16">
+                    </div>                
+                    <div class="input-group">
+                        <label for="ccexpiration">Expiration Date</label>
+                        <input type="text" name="ccexpiration" id="ccexpiration" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="input-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" name="cvv" id="cvv" placeholder="000" maxlength="3">
+                    </div>
+
+                <!-- form actions -->
+                <div>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Checkout">
+                </div>
+
+                </div>
+            </div>
+        </form>
+        <script src="js/products.js"></script>
+    </div>
+
+    <footer>
+        <div id="copyright">
+            © 2023 The Arch Restaurant
+        </div>
+    </footer>
+</body>
+
+</html>

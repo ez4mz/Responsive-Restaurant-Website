@@ -1,0 +1,148 @@
+@font-face{
+    font-family: Vogue;
+    src:  url("../fonts/Vogue.ttf");
+}
+
+
+@font-face{
+    font-family: Cinzel;
+    src:  url("../fonts/Cinzel-Regular.otf");
+}
+
+@media screen and (max-width: 600px){
+  nav ul{
+    flex-direction: column;
+  }
+
+}
+
+#title{
+    font-family: Vogue;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+nav{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    border:  solid 1px black;
+    margin-bottom: 20px;
+
+}
+
+nav ul{
+    border : solid 0px black;
+    display : flex;
+    list-style:  none;
+    padding : 0px;
+    margin: 0px;
+    color: green;
+
+
+}
+
+nav ul a{
+    flex-grow :1;
+
+}
+
+nav ul a li{
+    padding : 20px;
+    color: white;
+    text-align:  center;
+    border:  solid 0px black;
+}
+
+nav ul a li:hover{
+    background-color : rgba(34,72,91,0.5);
+}
+nav ul a:link{
+    color : #94582F;
+    font-family: sans-serif;
+    text-decoration:  none;
+
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background: url('../images/vintage-dark.jpg') center/cover fixed no-repeat;
+    opacity: 0.8; 
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+#map{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+footer{
+    display: block;
+    margin-top: 30px;
+}
+
+
+
+#copyright{
+    font-family: Cinzel;
+    width: 100%;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    background-color: grey;
+}

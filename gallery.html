@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery_style.css">
+    <title>Restaurant Gallery</title>
+</head>
+<body>
+<div class="header">
+    <div id="title">
+        <h1>The Arch Bar</h1>
+</div>
+
+    <!--Navigation Bar -->
+    <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="products.html"><li>Order Online</li></a>
+            <a href="search.html"><li>Search</li></a>
+            <a href="signup.html"><li>Sign up</li></a>
+            <a href="login.html"><li>Log in</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="game.html"><li>Game</li></a>
+
+        </ul>
+    </nav>
+</div>
+<div class="gallery-container">
+    <img src="images/dish1.jpeg" alt="Dish 1">
+    <img src="images/dish2.jpeg" alt="Dish 2">
+    <img src="images/dish3.jpg" alt="Dish 3">
+    <img src="images/dish4.jpeg" alt="Dish 4">
+    <img src="images/dish5.jpeg" alt="Dish 5">
+    <img src="images/dish6.jpeg" alt="Dish 6">
+    <img src="images/dish7.jpeg" alt="Dish 7">
+    <img src="images/dish8.jpeg" alt="Dish 8">
+    <img src="images/dish9.png" alt="Environment 1">
+    <img src="images/environment1.jpeg" alt="Environment 2">
+    <img src="images/environment2.jpeg" alt="Environment 3">
+    <img src="images/environment3.jpeg" alt="Environment 4">
+</div>
+<br><br>
+<div class="carousel">
+  <div class="carousel-images">
+    <img src="images/slide1.jpg" alt="Slide 1">
+    <img src="images/slide2.jpg" alt="Slide 2">
+    <img src="images/slide3.jpg" alt="Slide 3">
+    <img src="images/slide4.jpg" alt="Slide 4">
+    <img src="images/slide5.jpg" alt="Slide 5">
+    <img src="images/slide6.jpg" alt="Slide 6">
+    <img src="images/slide7.jpg" alt="Slide 7">
+
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+<script src="js/gallery.js"></script>
+</body>
+<footer>
+    <div id="copyright">
+        © 2023 The Arch Restaurant
+    </div>
+</footer>
+</html>
